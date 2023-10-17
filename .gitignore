@@ -42,3 +42,4 @@ build/
 !pom.xml
 infrastructure/docker-compose/volumes/*
 .gradle
+gradle
