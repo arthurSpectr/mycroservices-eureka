@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableEurekaClient
 @ComponentScan(basePackages = "regexit")
-@EnableJpaRepositories(basePackages = {"regexit.plannertodo"})
+@EnableJpaRepositories(basePackages = {"regexit.plannertodo", "regexit.plannerentity.entity"})
 @EnableFeignClients
 public class PlannerTodoApplication {
 

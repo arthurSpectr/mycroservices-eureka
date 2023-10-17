@@ -49,7 +49,7 @@ public class CategoryController {
     }
 
     @PostMapping("/all")
-    public List<Category> findAll(@RequestBody Long userId) {
+    public List<Category> findAll(@RequestParam Long userId) {
         return categoryService.findAll(userId);
     }
 

@@ -41,8 +41,10 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 
 
-	implementation 'regexit:planner-entity'
-	implementation 'regexit:planner-utils'
+//	implementation 'regexit:planner-entity'
+	implementation project(':planner-entity')
+	implementation project(':planner-utils')
+//	implementation 'regexit:planner-utils'
 }
 
 dependencyManagement {

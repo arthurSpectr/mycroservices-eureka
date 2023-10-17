@@ -1,7 +1,5 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '2.7.9'
-	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
 group = 'regexit'
@@ -19,15 +17,14 @@ configurations {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.springframework.boot:spring-boot-starter-aop'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	implementation 'regexit:planner-entity'
+	implementation 'org.springframework.boot:spring-boot-starter-aop:2.7.9'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.9'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux:2.7.9'
+	implementation project(':planner-entity')
 
-	implementation 'jakarta.transaction:jakarta.transaction-api'
+	implementation 'jakarta.transaction:jakarta.transaction-api:2.0.1'
 
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok:1.18.30'
+	annotationProcessor 'org.projectlombok:lombok:1.18.30'
 }
 
